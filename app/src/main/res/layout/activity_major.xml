@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <include layout="@layout/custom_actionbar"/>
+
+    <Spinner
+        android:id="@+id/major_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:spinnerMode="dropdown"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#080808"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:minHeight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:text="교 과 목 명"
+            android:textSize="@dimen/subject_text_size"
+            android:textColor="@color/subject_text_color"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#080808"/>
+
+        <TextView
+            android:id="@+id/divideClass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="분반"
+            android:textSize="@dimen/subject_text_size"
+            android:textColor="@color/subject_text_color"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#080808"/>
+
+        <TextView
+            android:id="@+id/professor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="교수명"
+            android:textColor="@color/subject_text_color"
+            android:textSize="@dimen/subject_text_size"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#080808"/>
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="학년"
+            android:textSize="@dimen/subject_text_size"
+            android:textColor="@color/subject_text_color"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#080808"/>
+
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="학점"
+            android:textSize="@dimen/subject_text_size"
+            android:textColor="@color/subject_text_color"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#080808"/>
+
+        <TextView
+            android:id="@+id/division"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="이수\n구분"
+            android:textSize="@dimen/subject_text_size"
+            android:textColor="@color/subject_text_color"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#080808"/>
+
+    <ListView
+        android:id="@+id/subject_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>
